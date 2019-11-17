@@ -1,0 +1,103 @@
+
+\documentclass[12pt]{article} 
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+\usepackage{geometry} 
+\geometry{a4paper}
+
+\usepackage{fancyhdr} 
+\pagestyle{fancy} 
+\renewcommand{\headrulewidth}{0pt}
+\lhead{}\chead{}\rhead{}
+\lfoot{}\cfoot{\thepage}\rfoot{}
+
+\usepackage{sectsty}
+\allsectionsfont{\sffamily\mdseries\upshape}
+
+%============================================================================================================
+\begin{document}
+\title{Operating Systems - Report on the Linux Systems}
+\author{Samuel, Andersson, Johan Dahlberg, Eric Falheim, \\Camilla Heiding, Xuan Hoang, Amer Hodzic}
+\date{Today}
+\maketitle
+
+\newpage
+\tableofcontents
+\newpage
+
+\section{Linux History and Licensing} %To be written by
+
+
+\section{Kernel}
+The kernel is the core of the operating system and make communication possible to the hardware.
+
+There can exist many kernels in the same system. And in the case of a failure, when updating a kernel,
+you can always boot the system with an older version that was working.
+
+\subsection{Kernel Modules} %Written by Eric Falheim
+%man-pages fork()
+A kernel module is a driver that can be loaded into the kernel dynamically, at boot-time or run-time,
+to make communication between a device and hardware possible (via the kernel).
+This makes the kernel more lightweight due to the fact that unused modules can be unloaded from the kernel, which frees up space.
+
+All modules can be found in the /lib/modules/ folder.
+Working with modules is easy in Linux. There are commands you can run from the CLI to load, unload and list modules.
+\begin{itemize}
+  \item lsmod - lists the loaded modules.
+  \item modprobe \textbf{[-r]} \textit{module\_name} - will load or unload named module depending on the flag -r.
+  \item insmod \textit{module\_name} - same as using modprobe without -r flag.
+  \item rmmod \textit{module\_name} - same as using modprobe with -r flag.
+\end{itemize}
+
+
+\section{Process Management} %To be written by Eric Falheim
+A process is associated with a Process ID (PID) on creation, which will be unique for this process. 
+Every process is spawned by a parent process with a fork, 
+and on creation the child-process memory space is identical to the parent's, but separate.
+
+A process can run in the foreground or in the background.
+
+\section{Scheduling} %To be written by
+
+\section{Memory Management} %To be written by
+
+\section{File Systems} %To be written by
+
+\subsection{Mounting}
+There are no disk-drives in Linux, instead all devices are mounted on a mounting points in the filesystem. 
+So installing a new hard-disk or inserting a USB-drive is treated much the same way,
+ by mounting them on a node where you later want to access it.
+
+\subsection{Structure}
+  The filesystem begins at the root /, where folders that divide the system logically is placed. Some examples:
+  \begin{itemize}
+    \item /bin - Contains binaries for the system. Easily accessed by the system via environment variable \$PATH.
+    \item /boot - Contains files for booting the system, including the kernel.
+    \item /dev - Contains the system's devices.
+    \item /etc - Contains configuration files for the system.
+    \item /lib - Modules, software libraries and information databases.
+    \item /home - Home directory for every user on the system. 
+    \item /tmp - A temporary directory that is emptied periodically, or when the system is shut down.
+  \end{itemize}
+ 
+ 
+ 
+ 
+ 
+
+ 
+
+
+
+\section{Input and Output} %To be written by
+
+\section{Interprocess Communication} %To be written by
+
+\section{Network Communications} %To be written by
+
+\section{Security} %To be written by
+
+\end{document}
+
