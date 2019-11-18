@@ -102,10 +102,14 @@ When a process recieves a signal, it will terminate if it isn't catching it in a
 
 \section{Scheduling} %Written by
 %https://www.kernel.org/doc/html/latest/scheduler/index.html
+\subsection{User-mode scheduling}
+Completely fair scheduler (CFS).
+
+\subsection{Kernel-mode scheduling}
+First come first served  (FCFS) and Round Robin (RR).
 
 \section{Memory Management} %Written by
 %https://www.kernel.org/doc/html/latest/admin-guide/mm/index.html
-
 
 \section{File Systems} %Written by
 \subsection{Files}
@@ -125,8 +129,8 @@ There are no disk-drives in Linux, instead all devices are mounted on mounting p
 So installing a new hard-disk or inserting a USB-drive is treated the same way.
 By mounting the device on an inode, you can treat the new device as a part of the whole file-system.
 
-\subsection{File System Structure}
-  The filesystem begins at the root /, where folders that divide the system logically is placed. Some examples:
+\subsection{File System Hierarchy Structure}
+  The filesystem begins at the root /, where directories that divide the system logically is placed. Some examples:
   \begin{itemize}
     \item /bin - Contains binaries for the system. Easily accessed by the system via environment variable \$PATH.
     \item /boot - Files for booting the system, including the kernel.
@@ -148,6 +152,7 @@ By mounting the device on an inode, you can treat the new device as a part of th
 
 \section{Interprocess Communication} %Written by
 %https://opensource.com/article/19/4/interprocess-communication-linux-storage
+Shared memory, pipes and reaad-write to file.
 
 \section{Network Communications} %Written by
 
