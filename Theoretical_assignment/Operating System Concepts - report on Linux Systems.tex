@@ -58,7 +58,8 @@ This is the reason for the extremely many different "flavors" of Linux.
 %man-pages fork()
 A kernel module is a driver that can be loaded into the kernel dynamically, at boot-time or run-time,
 to make communication between a device and hardware possible (via the kernel).
-This makes the kernel more lightweight due to the fact that unused modules can be unloaded from the kernel, which frees up space.
+This makes the kernel more lightweight due to the fact that unused modules can be unloaded from the kernel, which frees up RAM.
+Whenever a new module is loaded, there is no need to rebuild the kernel or reboot the system.
 
 All modules can be found in the /lib/modules/ folder.
 Working with modules is easy in Linux. There are commands you can run from the CLI to load, unload and list modules.
@@ -70,8 +71,9 @@ Working with modules is easy in Linux. There are commands you can run from the C
 \end{itemize}
 
 \section{Process Management} %Written by
-A process is a program in execution and it has it's own address space.
-It executes instructions sequentially, but each process can contain many threads. 
+A process is a program in execution and it has it's own address space if it's spawned with the fork().
+Processes can also be cloned with parameters, effectively telling the child whether it should share the parent's filesystem, memory space, signal handlers and open files.
+Each process execute instructions sequentially, but can contain many threads. In Linux this is called a task. 
 All threads share the same address space, and can therefore communicate via shared-memory.
 
 \subsection{Process attributes}
@@ -84,7 +86,7 @@ The TTY attribute tells us what terminal the process is connected to.
 
 \subsection{Signals}
 A signal in linux is like an interrupt, which happens due to an event. 
-When a process recieves a signal, it will terminate if it isn't catching it in any way.
+When a process recieves a signal, it will terminate if it isn't handling the signal.
 \begin{itemize}
   \item SIGABORT - Process abort
   \item SIGALARM - Alarm clock
@@ -108,7 +110,7 @@ Completely fair scheduler (CFS).
 \subsection{Kernel-mode scheduling}
 First come first served  (FCFS) and Round Robin (RR).
 
-\section{Memory Management} %Written by
+%\section{Memory Management} %Written by
 %https://www.kernel.org/doc/html/latest/admin-guide/mm/index.html
 
 \section{File Systems} %Written by
@@ -116,9 +118,9 @@ First come first served  (FCFS) and Round Robin (RR).
 Everything is stored as files on Linux. Even directories, devices, sockets, pipes and symbolic links.
 When showing information about a file you see something like "-rwx r-- r--". 
 The first character determines the file's type. For regular files, a '-' is shown, and for directories a 'd' is shown. 
-The remainder of the string determines the user-group-universal rights. 
+The remainder of the string determines the user-group-universal access-rights. 
 For the example above, the user got read-write-execute rights, whereas the group and everyone else can just read that file.
-This adds a level of protection to the system so only the right processes and users can modify the file.
+This adds a level of protection to the system so only the processes and users with access-rights can read/modify/execute the file.
 
 \subsection{inode}
 An inode in UNIX-like systems are data-structures for files and directories. 
@@ -140,7 +142,7 @@ By mounting the device on an inode, you can treat the new device as a part of th
     \item /mnt - Mounting point for external devices.
     \item /net - Mounting point for remote file-systems.
     \item /home - Home directory containing every user's own home folder on the system. 
-    \item /proc - 
+    \item /proc - Process file system
     \item /sbin - Binaries used by the administrator and the system.
     \item /usr -
     \item /tmp - A temporary directory that is emptied periodically, or when the system is shut down.
@@ -152,11 +154,19 @@ By mounting the device on an inode, you can treat the new device as a part of th
 
 \section{Interprocess Communication} %Written by
 %https://opensource.com/article/19/4/interprocess-communication-linux-storage
-Shared memory, pipes and reaad-write to file.
+\subsection{Shared memory}
+\subsection{Pipes}
+\subsection{Read-write to files}
 
-\section{Network Communications} %Written by
+%\section{Network Communications} %Written by
 
-\section{Security} %Written by
+%\section{Security} %Written by
+
+\section{Suggested topics to add}
+\begin{itemize}
+  \item file descriptors
+  \item 
+\end{itemize}
 
 \end{document}
 
