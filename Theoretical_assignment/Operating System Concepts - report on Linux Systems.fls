@@ -1,7 +1,7 @@
-PWD c:\Users\MiNiBiKiNi\Documents\GitHub\OS_course\Theoretical_assignment
+PWD c:\Users\MiNiBiKiNi\Documents\GitHub\GruppM\Theoretical_assignment
 INPUT C:\Users\MiNiBiKiNi\AppData\Local\MiKTeX\2.9\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\MiNiBiKiNi\Documents\GitHub\OS_course\Theoretical_assignment\Operating System Concepts - report on Linux Systems.tex
-OUTPUT c:\Users\MiNiBiKiNi\Documents\GitHub\OS_course\Theoretical_assignment\Operating System Concepts - report on Linux Systems.log
+INPUT c:\Users\MiNiBiKiNi\Documents\GitHub\GruppM\Theoretical_assignment\Operating System Concepts - report on Linux Systems.tex
+OUTPUT c:\Users\MiNiBiKiNi\Documents\GitHub\GruppM\Theoretical_assignment\Operating System Concepts - report on Linux Systems.log
 INPUT S:\MikTeX2.9\tex\latex\base\article.cls
 INPUT S:\MikTeX2.9\tex\latex\base\article.cls
 INPUT S:\MikTeX2.9\tex\latex\base\size12.clo
@@ -48,9 +48,9 @@ INPUT S:\MikTeX2.9\tex\latex\fancyhdr\fancyhdr.sty
 INPUT S:\MikTeX2.9\tex\latex\fancyhdr\fancyhdr.sty
 INPUT S:\MikTeX2.9\tex\latex\sectsty\sectsty.sty
 INPUT S:\MikTeX2.9\tex\latex\sectsty\sectsty.sty
-INPUT c:\Users\MiNiBiKiNi\Documents\GitHub\OS_course\Theoretical_assignment\Operating System Concepts - report on Linux Systems.aux
-INPUT c:\Users\MiNiBiKiNi\Documents\GitHub\OS_course\Theoretical_assignment\Operating System Concepts - report on Linux Systems.aux
-OUTPUT c:\Users\MiNiBiKiNi\Documents\GitHub\OS_course\Theoretical_assignment\Operating System Concepts - report on Linux Systems.aux
+INPUT c:\Users\MiNiBiKiNi\Documents\GitHub\GruppM\Theoretical_assignment\Operating System Concepts - report on Linux Systems.aux
+INPUT c:\Users\MiNiBiKiNi\Documents\GitHub\GruppM\Theoretical_assignment\Operating System Concepts - report on Linux Systems.aux
+OUTPUT c:\Users\MiNiBiKiNi\Documents\GitHub\GruppM\Theoretical_assignment\Operating System Concepts - report on Linux Systems.aux
 INPUT S:\MikTeX2.9\tex\context\base\mkii\supp-pdf.mkii
 INPUT S:\MikTeX2.9\tex\context\base\mkii\supp-pdf.mkii
 INPUT S:\MikTeX2.9\tex\latex\oberdiek\epstopdf-base.sty
@@ -77,14 +77,14 @@ INPUT S:\MikTeX2.9\fonts\tfm\public\cm\cmr17.tfm
 INPUT S:\MikTeX2.9\fonts\tfm\public\cm\cmr12.tfm
 INPUT S:\MikTeX2.9\fonts\tfm\public\cm\cmmi12.tfm
 INPUT S:\MikTeX2.9\fonts\tfm\public\cm\cmsy10.tfm
-OUTPUT c:\Users\MiNiBiKiNi\Documents\GitHub\OS_course\Theoretical_assignment\Operating System Concepts - report on Linux Systems.pdf
+OUTPUT c:\Users\MiNiBiKiNi\Documents\GitHub\GruppM\Theoretical_assignment\Operating System Concepts - report on Linux Systems.pdf
 INPUT C:\Users\MiNiBiKiNi\AppData\Local\MiKTeX\2.9\pdftex\config\pdftex.map
 INPUT S:\MikTeX2.9\fonts\tfm\public\cm\cmr17.tfm
 INPUT S:\MikTeX2.9\fonts\tfm\public\cm\cmbx12.tfm
 INPUT S:\MikTeX2.9\fonts\tfm\public\cm\cmssbx10.tfm
 INPUT S:\MikTeX2.9\fonts\tfm\public\cm\cmss17.tfm
-INPUT c:\Users\MiNiBiKiNi\Documents\GitHub\OS_course\Theoretical_assignment\Operating System Concepts - report on Linux Systems.toc
-INPUT c:\Users\MiNiBiKiNi\Documents\GitHub\OS_course\Theoretical_assignment\Operating System Concepts - report on Linux Systems.toc
+INPUT c:\Users\MiNiBiKiNi\Documents\GitHub\GruppM\Theoretical_assignment\Operating System Concepts - report on Linux Systems.toc
+INPUT c:\Users\MiNiBiKiNi\Documents\GitHub\GruppM\Theoretical_assignment\Operating System Concepts - report on Linux Systems.toc
 INPUT S:\MikTeX2.9\fonts\tfm\public\cm\cmbx12.tfm
 INPUT S:\MikTeX2.9\fonts\tfm\public\cm\cmr8.tfm
 INPUT S:\MikTeX2.9\fonts\tfm\public\cm\cmr6.tfm
@@ -94,19 +94,39 @@ INPUT S:\MikTeX2.9\fonts\tfm\public\cm\cmmi6.tfm
 INPUT S:\MikTeX2.9\fonts\tfm\public\cm\cmsy10.tfm
 INPUT S:\MikTeX2.9\fonts\tfm\public\cm\cmsy8.tfm
 INPUT S:\MikTeX2.9\fonts\tfm\public\cm\cmsy6.tfm
-OUTPUT c:\Users\MiNiBiKiNi\Documents\GitHub\OS_course\Theoretical_assignment\Operating System Concepts - report on Linux Systems.toc
+OUTPUT c:\Users\MiNiBiKiNi\Documents\GitHub\GruppM\Theoretical_assignment\Operating System Concepts - report on Linux Systems.toc
 INPUT S:\MikTeX2.9\fonts\tfm\public\cm\cmbx12.tfm
 INPUT S:\MikTeX2.9\fonts\tfm\public\cm\cmssbx10.tfm
 INPUT S:\MikTeX2.9\fonts\tfm\public\cm\cmss12.tfm
-INPUT c:\Users\MiNiBiKiNi\Documents\GitHub\OS_course\Theoretical_assignment\imgs\structure.png
-INPUT c:\Users\MiNiBiKiNi\Documents\GitHub\OS_course\Theoretical_assignment\imgs\structure.png
-INPUT c:\Users\MiNiBiKiNi\Documents\GitHub\OS_course\Theoretical_assignment\imgs\structure.png
-INPUT c:\Users\MiNiBiKiNi\Documents\GitHub\OS_course\Theoretical_assignment\imgs\structure.png
-INPUT c:\Users\MiNiBiKiNi\Documents\GitHub\OS_course\Theoretical_assignment\imgs\structure.png
+INPUT c:\Users\MiNiBiKiNi\Documents\GitHub\GruppM\Theoretical_assignment\imgs\structure.png
+INPUT c:\Users\MiNiBiKiNi\Documents\GitHub\GruppM\Theoretical_assignment\imgs\structure.png
+INPUT c:\Users\MiNiBiKiNi\Documents\GitHub\GruppM\Theoretical_assignment\imgs\structure.png
+INPUT c:\Users\MiNiBiKiNi\Documents\GitHub\GruppM\Theoretical_assignment\imgs\structure.png
+INPUT c:\Users\MiNiBiKiNi\Documents\GitHub\GruppM\Theoretical_assignment\imgs\structure.png
 INPUT S:\MikTeX2.9\tex\latex\base\omscmr.fd
 INPUT S:\MikTeX2.9\tex\latex\base\omscmr.fd
 INPUT S:\MikTeX2.9\fonts\tfm\public\cm\cmti12.tfm
-INPUT c:\Users\MiNiBiKiNi\Documents\GitHub\OS_course\Theoretical_assignment\Operating System Concepts - report on Linux Systems.aux
+INPUT c:\Users\MiNiBiKiNi\Documents\GitHub\GruppM\Theoretical_assignment\imgs\htop.jpg
+INPUT c:\Users\MiNiBiKiNi\Documents\GitHub\GruppM\Theoretical_assignment\imgs\htop.jpg
+INPUT c:\Users\MiNiBiKiNi\Documents\GitHub\GruppM\Theoretical_assignment\imgs\htop.jpg
+INPUT c:\Users\MiNiBiKiNi\Documents\GitHub\GruppM\Theoretical_assignment\imgs\htop.jpg
+INPUT c:\Users\MiNiBiKiNi\Documents\GitHub\GruppM\Theoretical_assignment\imgs\htop.jpg
+INPUT c:\Users\MiNiBiKiNi\Documents\GitHub\GruppM\Theoretical_assignment\imgs\kill.png
+INPUT c:\Users\MiNiBiKiNi\Documents\GitHub\GruppM\Theoretical_assignment\imgs\kill.png
+INPUT c:\Users\MiNiBiKiNi\Documents\GitHub\GruppM\Theoretical_assignment\imgs\kill.png
+INPUT c:\Users\MiNiBiKiNi\Documents\GitHub\GruppM\Theoretical_assignment\imgs\kill.png
+INPUT c:\Users\MiNiBiKiNi\Documents\GitHub\GruppM\Theoretical_assignment\imgs\kill.png
+INPUT c:\Users\MiNiBiKiNi\Documents\GitHub\GruppM\Theoretical_assignment\imgs\fgbg.png
+INPUT c:\Users\MiNiBiKiNi\Documents\GitHub\GruppM\Theoretical_assignment\imgs\fgbg.png
+INPUT c:\Users\MiNiBiKiNi\Documents\GitHub\GruppM\Theoretical_assignment\imgs\fgbg.png
+INPUT c:\Users\MiNiBiKiNi\Documents\GitHub\GruppM\Theoretical_assignment\imgs\fgbg.png
+INPUT c:\Users\MiNiBiKiNi\Documents\GitHub\GruppM\Theoretical_assignment\imgs\fgbg.png
+INPUT c:\Users\MiNiBiKiNi\Documents\GitHub\GruppM\Theoretical_assignment\imgs\fs.png
+INPUT c:\Users\MiNiBiKiNi\Documents\GitHub\GruppM\Theoretical_assignment\imgs\fs.png
+INPUT c:\Users\MiNiBiKiNi\Documents\GitHub\GruppM\Theoretical_assignment\imgs\fs.png
+INPUT c:\Users\MiNiBiKiNi\Documents\GitHub\GruppM\Theoretical_assignment\imgs\fs.png
+INPUT c:\Users\MiNiBiKiNi\Documents\GitHub\GruppM\Theoretical_assignment\imgs\fs.png
+INPUT c:\Users\MiNiBiKiNi\Documents\GitHub\GruppM\Theoretical_assignment\Operating System Concepts - report on Linux Systems.aux
 INPUT S:\MikTeX2.9\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT S:\MikTeX2.9\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT S:\MikTeX2.9\fonts\type1\public\amsfonts\cm\cmr12.pfb

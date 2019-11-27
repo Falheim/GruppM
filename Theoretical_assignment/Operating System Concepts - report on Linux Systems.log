@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.3.15)  17 NOV 2019 18:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.3.15)  27 NOV 2019 19:20
 entering extended mode
-**"c:/Users/MiNiBiKiNi/Documents/GitHub/OS_course/Theoretical_assignment/Operating System Concepts - report on Linux Systems.tex"
-("c:/Users/MiNiBiKiNi/Documents/GitHub/OS_course/Theoretical_assignment/Operating System Concepts - report on Linux Systems.tex"
+**"c:/Users/MiNiBiKiNi/Documents/GitHub/GruppM/Theoretical_assignment/Operating System Concepts - report on Linux Systems.tex"
+("c:/Users/MiNiBiKiNi/Documents/GitHub/GruppM/Theoretical_assignment/Operating System Concepts - report on Linux Systems.tex"
 LaTeX2e <2018-12-01>
 (S:\MikTeX2.9\tex/latex/base\article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
@@ -116,7 +116,7 @@ Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footers
 \f@nch@O@orf=\skip51
 ) (S:\MikTeX2.9\tex/latex/sectsty\sectsty.sty
 Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading styles
-) ("c:/Users\MiNiBiKiNi\Documents\GitHub\OS_course\Theoretical_assignment\Operating System Concepts - report on Linux Systems.aux")
+) ("c:/Users\MiNiBiKiNi\Documents\GitHub\GruppM\Theoretical_assignment\Operating System Concepts - report on Linux Systems.aux")
 \openout1 = `"Operating System Concepts - report on Linux Systems.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
@@ -218,7 +218,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 27.
 [1
 
-{C:/Users/MiNiBiKiNi/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] ("c:/Users\MiNiBiKiNi\Documents\GitHub\OS_course\Theoretical_assignment\Operating System Concepts - report on Linux Systems.toc"
+{C:/Users/MiNiBiKiNi/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] ("c:/Users\MiNiBiKiNi\Documents\GitHub\GruppM\Theoretical_assignment\Operating System Concepts - report on Linux Systems.toc"
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 3.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -235,26 +235,59 @@ File: imgs/structure.png Graphic file (type png)
 <use imgs/structure.png>
 Package pdftex.def Info: imgs/structure.png  used on input line 44.
 (pdftex.def)             Requested size: 220.82445pt x 174.65207pt.
- [3 <c:/Users/MiNiBiKiNi/Documents/GitHub/OS_course/Theoretical_assignment/imgs/structure.png>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 66.
+ [3 <c:/Users/MiNiBiKiNi/Documents/GitHub/GruppM/Theoretical_assignment/imgs/structure.png>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 67.
  (S:\MikTeX2.9\tex/latex/base\omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 66.
- [4] [5] [6] [7] ("c:/Users\MiNiBiKiNi\Documents\GitHub\OS_course\Theoretical_assignment\Operating System Concepts - report on Linux Systems.aux") ) 
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 67.
+ [4]
+<imgs/htop.jpg, id=24, 899.61093pt x 446.41782pt>
+File: imgs/htop.jpg Graphic file (type jpg)
+<use imgs/htop.jpg>
+Package pdftex.def Info: imgs/htop.jpg  used on input line 87.
+(pdftex.def)             Requested size: 449.80437pt x 223.20836pt.
+
+Overfull \hbox (31.55069pt too wide) in paragraph at lines 84--88
+[] 
+ []
+
+[5 <c:/Users/MiNiBiKiNi/Documents/GitHub/GruppM/Theoretical_assignment/imgs/htop.jpg>]
+<imgs/kill.png, id=28, 547.2947pt x 191.21437pt>
+File: imgs/kill.png Graphic file (type png)
+<use imgs/kill.png>
+Package pdftex.def Info: imgs/kill.png  used on input line 95.
+(pdftex.def)             Requested size: 383.10367pt x 133.84914pt.
+<imgs/fgbg.png, id=29, 579.66562pt x 258.21469pt>
+File: imgs/fgbg.png Graphic file (type png)
+<use imgs/fgbg.png>
+Package pdftex.def Info: imgs/fgbg.png  used on input line 101.
+(pdftex.def)             Requested size: 405.76317pt x 180.74904pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--102
+
+ []
+
+[6 <c:/Users/MiNiBiKiNi/Documents/GitHub/GruppM/Theoretical_assignment/imgs/kill.png> <c:/Users/MiNiBiKiNi/Documents/GitHub/GruppM/Theoretical_assignment/imgs/fgbg.png>]
+<imgs/fs.png, id=33, 642.90187pt x 435.87843pt>
+File: imgs/fs.png Graphic file (type png)
+<use imgs/fs.png>
+Package pdftex.def Info: imgs/fs.png  used on input line 122.
+(pdftex.def)             Requested size: 321.45015pt x 217.93867pt.
+ [7 <c:/Users/MiNiBiKiNi/Documents/GitHub/GruppM/Theoretical_assignment/imgs/fs.png>] [8] [9] ("c:/Users\MiNiBiKiNi\Documents\GitHub\GruppM\Theoretical_assignment\Operating System Concepts - report on Linux Systems.aux") ) 
 Here is how much of TeX's memory you used:
- 3926 strings out of 492946
- 59925 string characters out of 3142157
- 141892 words of memory out of 3000000
- 7773 multiletter control sequences out of 15000+200000
+ 3950 strings out of 492946
+ 60245 string characters out of 3142157
+ 143892 words of memory out of 3000000
+ 7793 multiletter control sequences out of 15000+200000
  10356 words of font info for 36 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,10n,43p,390b,321s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,10n,43p,387b,321s stack positions out of 5000i,500n,10000p,200000b,50000s
 <S:/MikTeX2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><S:/MikTeX2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><S:/MikTeX2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><S:/MikTeX2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><S:/MikTeX2.9/fonts/type1/public/amsfonts/cm/cmss17.pfb><S:/MikTeX2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><S:/MikTeX2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on "c:/Users\MiNiBiKiNi\Documents\GitHub\OS_course\Theoretical_assignment\Operating System Concepts - report on Linux Systems.pdf" (7 pages, 117088 bytes).
+Output written on "c:/Users\MiNiBiKiNi\Documents\GitHub\GruppM\Theoretical_assignment\Operating System Concepts - report on Linux Systems.pdf" (9 pages, 739529 bytes).
 PDF statistics:
- 57 PDF objects out of 1000 (max. 8388607)
+ 67 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

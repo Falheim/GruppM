@@ -32,8 +32,8 @@
 
 \section{Linux History} %Written by
 \subsection{The making of Linux}
-git gud - Linus Torvalds.
-
+git gud - Linus Torvalds. 
+ 
 \subsection{The kernel}
 The kernel is the core of the operating system and make communication possible to the hardware.
 It can exist many kernels in the same system. And in the case of a failure, when updating a kernel,
@@ -51,7 +51,7 @@ you can always boot the system with an older version that was working.
 The Linux kernel is distributed under the GNU General Public License (GPL). 
 This means that anyone can download the kernel for free to use however they choose.
 If you modify the kernel and make a derivative of it, however, it must be distributed with the same licensing terms.
-So whenever anyone modifies the code and adds their own standard programs and tools in a packaged form, it could be called a new operating system.
+So whenever anyone modifies the code and adds their own standard programs and tools in a packaged form, it could be called a new distribution of the system.
 This is the reason for the extremely many different "flavors" of Linux.
 
 \section{Kernel Modules} %Written by
@@ -69,8 +69,8 @@ Working with modules is easy in Linux. There are commands you can run from the C
   \item insmod \textit{module\_name} - same as using modprobe without -r flag.
   \item rmmod \textit{module\_name} - same as using modprobe with -r flag.
 \end{itemize}
-
-\section{Process Management} %Written by
+\newpage
+\section{Process Management} 
 A process is a program in execution and it has it's own address space if it's spawned with the fork().
 Processes can also be cloned with parameters, effectively telling the child whether it should share the parent's filesystem, memory space, signal handlers and open files.
 Each process execute instructions sequentially, but can contain many threads. In Linux this is called a task. 
@@ -80,29 +80,27 @@ All threads share the same address space, and can therefore communicate via shar
 A process is associated with a Process ID (PID) on creation, which will be unique for this process. 
 Every process is spawned by a parent process (PPID) with a fork, and on creation the child-process memory space is identical to the parent's, but separate.
 Who spawned the process and what group they belonged to is stored in Real User ID (RUID), Effective User ID (EUID), Real Group ID (RGID) and Effective Group ID (EGID).
+
 The process has it's own priority which can be set from -20 (low) to 20 (high), by default it depends on recent CPU usage. 
 In addition to this every process can be nice to other processes by hugging less resources. This value can be set between -20 to 19.
 The TTY attribute tells us what terminal the process is connected to.
+\includegraphics[scale=0.5]{imgs/htop.jpg}
 
 \subsection{Signals}
-A signal in linux is like an interrupt, which happens due to an event. 
-When a process recieves a signal, it will terminate if it isn't handling the signal.
-\begin{itemize}
-  \item SIGABORT - Process abort
-  \item SIGALARM - Alarm clock
-  \item SIGFPE - Floating point exception
-  \item SIGHUP - Hangup
-  \item SIGILL - Illegal instruction
-  \item SIGINT - Terminal interrupt
-  \item SIGKILL - Kill
-  \item SIGPIPE - Write on a pipe with no reader
-  \item SIGQUIT - Terminal quit
-  \item SIGSEGV - Invalid memory segment access
-  \item SIGTERM - Terminate
-  \item SIGUSR1 and SIGUSR2 - User defined signals
-\end{itemize}
+A signal in linux is telling the process that an external event has happened of some sort. 
+The process can handle most signals in it's own way. If it doesn't, it will terminate.
 
-\section{Scheduling} %Written by
+The command kill -signal\_number can be used to send a signal to a process.
+The most common signals to terminate a process are SIGTERM(15), SIGHUP(1) and SIGKILL(9), where the latter are more "aggressive" and considered more dirty ways to terminate a process.\\
+\includegraphics[scale=0.7]{imgs/kill.png}
+
+\subsection{Foreground and background}
+A process that's spawned, for example by a shell, can either take over the thread of execution and thereby halting the process spawning it.
+This is said to be a process running in the foreground. You can also make a parent spawn a child process run in the background by appending the character \& after the command.
+This will spawn the new process, but it will not take control over the shell spawning it.
+\includegraphics[scale=0.7]{imgs/fgbg.png}\\
+
+\section{Scheduling}
 %https://www.kernel.org/doc/html/latest/scheduler/index.html
 \subsection{User-mode scheduling}
 Completely fair scheduler (CFS).
@@ -110,17 +108,18 @@ Completely fair scheduler (CFS).
 \subsection{Kernel-mode scheduling}
 First come first served  (FCFS) and Round Robin (RR).
 
-%\section{Memory Management} %Written by
+\section{Memory Management}
 %https://www.kernel.org/doc/html/latest/admin-guide/mm/index.html
 
-\section{File Systems} %Written by
+\section{File Systems}
 \subsection{Files}
 Everything is stored as files on Linux. Even directories, devices, sockets, pipes and symbolic links.
 When showing information about a file you see something like "-rwx r-- r--". 
 The first character determines the file's type. For regular files, a '-' is shown, and for directories a 'd' is shown. 
 The remainder of the string determines the user-group-universal access-rights. 
 For the example above, the user got read-write-execute rights, whereas the group and everyone else can just read that file.
-This adds a level of protection to the system so only the processes and users with access-rights can read/modify/execute the file.
+This adds a level of protection to the system so only the processes and users with access-rights can read/modify/execute the file.\\
+\includegraphics[scale=0.5]{imgs/fs.png}
 
 \subsection{inode}
 An inode in UNIX-like systems are data-structures for files and directories. 
@@ -147,20 +146,28 @@ By mounting the device on an inode, you can treat the new device as a part of th
     \item /usr -
     \item /tmp - A temporary directory that is emptied periodically, or when the system is shut down.
   \end{itemize}
- 
-\section{Input and Output} %Written by
+
+\subsection{ext3 Filesystem and Journaling}
+ext3 stands for Third Extended Filesystem. Prior to ext3, there was ext2, which was considered a good filesystem with a few problems.
+If there was a power-outage and there was writings performed to the ext2 filesystem,
+ data could be corrupted and a disk-recovery were being performed over everything in the filesystem.
+ext3 introduced a journal which held meta-data on the latest write operations. This made every write more resource expensive,
+ but in the case of a power-outage, only the affected files would need to be considered for recovery.
+In the ext3 filesystem the maximum file-size is set to 2TB and the filesystem is capped at 32TB.
+
+\section{Input and Output} 
 \subsection{STDIN, STDOUT and STDERR}
 \subsection{Redirection and Pipes}
 
-\section{Interprocess Communication} %Written by
+\section{Interprocess Communication} 
 %https://opensource.com/article/19/4/interprocess-communication-linux-storage
 \subsection{Shared memory}
 \subsection{Pipes}
 \subsection{Read-write to files}
 
-%\section{Network Communications} %Written by
+\section{Network Communications} 
 
-%\section{Security} %Written by
+\section{Security} 
 
 \section{Suggested topics to add}
 \begin{itemize}
@@ -169,4 +176,3 @@ By mounting the device on an inode, you can treat the new device as a part of th
 \end{itemize}
 
 \end{document}
-
